@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Javascript Assignment (Module-3)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--slider plugin css -->
+    <link rel="stylesheet" href="css/jquery.imagecompare.min.css" />
+</head>
+
+<body>
+
+    <h1 style="text-align: center; background-color: aqua; padding: 2rem;">Advance Javascript <br />
+        Assignment (Module-3)
+    </h1>
+
+    <div class="questions">
+
+
+        <h1>1). Create a program to hide/show the password</h1>
+        <div class="password-wrapper">
+            <input type="password" id="passwordInput" placeholder="password" />
+            <span class="password-toggle" onclick="togglePasswordVisibility()">
+                <img id="passwordIcon" src="show-password.png" alt="Show Password">
+            </span>
+        </div>
+        <script>
+            function togglePasswordVisibility() {
+                var passwordInput = document.getElementById("passwordInput");
+                var passwordIcon = document.getElementById("passwordIcon");
+
+                if (passwordInput.type === "password") {
+                    passwordInput.type = "text";
+                    passwordIcon.src = "show-password.png";
+                    passwordIcon.alt = "Hide Password";
+                } else {
+                    passwordInput.type = "password";
+                    passwordIcon.src = "hide-password.png";
+                    passwordIcon.alt = "Show Password";
+                }
+            }
+        </script>
+        <hr />
+
+
+
+
+
+        <h1>2). Create a program that will select all the classes and loop over and whenever i click the
+            button the alert should show</h1>
+        <div class="loopselect">
+            <h1>Select All Classes</h1>
+            <button id="alertButton">Click me</button>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var alertButton = document.getElementById('alertButton');
+
+                alertButton.addEventListener('click', function () {
+                    var classes = document.getElementsByClassName('*');
+
+                    var classList = '';
+                    for (var i = 0; i < classes.length; i++) {
+                        classList += classes[i].className + '\n';
+                    }
+
+                    alert('Classes:\n' + classList);
+                });
+            });
+
+        </script>
+        <hr />
+
+
+
+
+
+
+        <h1>3). Create a responsive header using proper JavaScript</h1>
+        <header>
+            <div class="logo">
+                R <span>N</span> B
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="" class="active">HOME</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function () {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+        <hr />
+
+
+
+
+
+        <h1>4). Create a form and validate using JavaScript</h1>
+        <div class="loginform">
+            <form name="myform" method="post" action="main.html" onsubmit="return validateform()">
+                <h2>Login form</h2>
+                <input type="text" name="name" placeholder="Name *"><br /><br />
+                <input type="password" name="password" placeholder="Password *"><br /><br />
+                <input type="submit" value="login">
+            </form>
+            <script>
+                function validateform() {
+                    var name = document.myform.name.value;
+                    var password = document.myform.password.value;
+
+
+                    if (name == null || name == "") {
+                        alert("Please Enter Your Name");
+                        return false;
+                    }
+                    else if (password.length < 6) {
+                        alert("Please Enter Your Password");
+                        return false;
+                    }
+                    else {
+                        return true;
+                    }
+                }  
+            </script>
+        </div>
+        <hr />
+
+
+
+
+
+        <h1>5). Create a modal box using css and Js with three buttons</h1>
+        <div class="modelbox">
+            <div class="screen">
+                <h2>Click button to open modal</h2>
+                <button id="myBtn">Open Modal</button>
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto reprehenderit quos sint dicta
+                        perspiciatis non. Unde similique iusto aliquid reiciendis facere quos ullam voluptates
+                        dignissimos
+                        necessitatibus. Libero nulla beatae nostrum. Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Delectus recusandae repudiandae error dicta reprehenderit nostrum molestias! Nemo,
+                        distinctio
+                        delectus! Natus eos neque dolores corrupti minima necessitatibus molestiae quos enim ipsum.
+                        Ipsum,
+                        voluptatum? Veniam perspiciatis ea necessitatibus, eos itaque, magni nemo sed ipsum illum facere
+                        iusto dicta nulla quos mollitia vel totam dolorem! Reiciendis labore accusamus veritatis harum
+                        obcaecati, magni perspiciatis ratione sapiente laborum expedita itaque ipsam id sunt dolores
+                        unde
+                        molestias vero rerum ad numquam nihil ea eligendi iste cumque! Eveniet unde vitae, harum error
+                        vero
+                        debitis quae nisi, natus, deserunt explicabo repellendus non ullam? Quaerat quam dicta possimus
+                        officia?</p>
+                </div>
+
+            </div>
+
+            <script>
+                var modal = document.getElementById("myModal");
+                var btn = document.getElementById("myBtn");
+                var span = document.getElementsByClassName("close")[0];
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        </div>
+        <hr />
+
+
+
+
+        <h1>6). Use external js library to show slider</h1>
+        <div class="container">
+            <div id="carbon-block"></div>
+            <div>
+                <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <ul class="jqueryImageCompare" data-ratio="4x3">
+                <li data-image="https://photographylife.com/wp-content/uploads/2015/08/DSC_0163-2.jpg"
+                    data-title="Junagadh"></li>
+                <li data-image="https://images.timesproperty.com/blog/2709/unnamed___2022_07_26T200837816.png"
+                    data-title="Rajkot"></li>
+                <li data-image="https://ngs-space1.sgp1.digitaloceanspaces.com/am/uploads/mediaGallery/image/1658653042367.jpg-org"
+                    data-title="Ahmedabad"></li>
+                <li data-image="https://www.gujarattourism.com/content/dam/gujrattourism/images/destinations/vadodara/sursagar-lake/sursagar-lake.jpg"
+                    data-title="Vadodara"></li>
+                <li data-image="https://www.commercialdesignindia.com/cloud/2021/11/27/SzWy8gJ7-Aerial-View-Surat-Diamond-Bourse-by-Morphogenesis-2-scaled.jpg"
+                    data-title="Surat"></li>
+            </ul>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="js/jquery.imagecompare.min.js"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VDDWMRSTH"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-1VDDWMRSTH');
+            </script>
+            <script>
+                try {
+                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                        return true;
+                    }).catch(function (e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                    });
+                } catch (error) {
+                    console.log(error);
+                }
+            </script>
+
+        </div>
+        <hr />
+
+
+
+
+
+        <h1>7). Prevent the browser when i click the form submit button</h1>
+        <div class="preventform">
+            <form id="myForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span id="passwordError" class="error"></span>
+                </div>
+                <div>
+                    <input type="submit" class="submitbtn" value="Submit">
+                </div>
+            </form>
+        </div>
+        <script>
+            document.getElementById("myForm").addEventListener("submit", function (event) {
+                var nameInput = document.getElementById("name");
+                var emailInput = document.getElementById("email");
+                var passwordInput = document.getElementById("password");
+
+                var nameError = document.getElementById("nameError");
+                var emailError = document.getElementById("emailError");
+                var passwordError = document.getElementById("passwordError");
+
+                // Reset previous error messages
+                nameError.textContent = "";
+                emailError.textContent = "";
+                passwordError.textContent = "";
+
+                // Validate name
+                if (nameInput.value === "") {
+                    nameError.textContent = "Name is required";
+                    event.preventDefault(); // Prevent form submission
+                }
+
+                // Validate email
+                if (emailInput.value === "") {
+                    emailError.textContent = "Email is required";
+                    event.preventDefault(); // Prevent form submission
+                }
+
+                // Validate password
+                if (passwordInput.value === "") {
+                    passwordError.textContent = "Password is required";
+                    event.preventDefault(); // Prevent form submission
+                }
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>

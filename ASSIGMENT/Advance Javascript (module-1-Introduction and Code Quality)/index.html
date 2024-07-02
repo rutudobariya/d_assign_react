@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Javascript Assignment (Module-1)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; background-color: aqua; padding: 2rem;">Advance Javascript <br />
+        Assignment (Module-1)
+    </h1>
+
+    <h1>1). Write a program to Show an alert</h1>
+    <pre>
+        <html>
+            <head>
+                <title> Show alert </title>
+            <script>
+                function fun() {
+                    alert("Hellow World");
+                };  
+            </script>
+            </head>
+        <body>  
+            <form>  
+                <input type = "button" value = "Click me" onclick = "fun();" />  
+            </form>       
+        </body>  
+        </html>  
+    </pre>
+    <hr/>
+
+
+    <h1>2). What will be the result for these expressions?</h1>
+    <pre>
+           1. 5 > 4 = <u>true</u> => Five is larger then four
+           2. "apple" > "pineapple" = <u>false</u> => Dictionary comparison, hence false. “a” is smaller then “p”.
+           3. "2" > "12" = <u>true</u> => Dictionary comparison, “2” is larger then “1”.
+           4. undefined == null = <u>true</u> => undefined and null equal.
+           5. undefined === null = <u>false</u> => undefined and null equal. But data types of both are different.
+           6. null == "\n0\n" = <u>false</u> => null only equal to undefined.
+           7. null === +"\n0\n" = <u>false</u> => Strict equality of different types.
+    </pre>
+    <hr/>
+
+    <h1>3). Will alert be shown?</h1>
+    <pre>
+         if ("0") { alert( 'Hello'); } => <u>true</u>
+         alert will show on browser screen with hello message.
+    </pre>
+    <hr/>
+
+    <h1>4). What is the code below going to output? alert ( null || 2 || undefined )?</h1>
+    <pre>
+         The answer is 2
+         Because 2 is the only one value is truly defined.
+    </pre>
+    <hr/>
+
+    <h1>5). The following function returns true if the parameter age is greater than 18. Otherwise it asks for a
+        confirmation and returns its result:</h1>
+    <pre>
+        <input type="text" min="0" max="1000" id="age" placeholder="Enter Your Age" /> <br/>
+        <button type="button" onclick="checkage()">Check</button>
+        <script>
+            const age = document.getElementById("age").value;
+            function checkage() {
+                if (age < 18) {
+                    alert("true");
+                }
+                else {
+                    confirm('Did parents allow you?');
+                }
+            }
+        </script>
+    </pre>
+    <hr/>
+
+
+    <h1>6). Replace Function Expressions with arrow functions in the code below:</h1>
+    <h4>
+        <pre>
+            function ask(question, yes, no) {
+                if (confirm(question)) yes();
+                else no();
+            }
+            ask(
+                "Do you agree?",
+                function () { alert("You agreed."); },
+                function () { alert("You canceled the execution."); }
+            );
+        </pre>
+    </h4>
+    
+    <h4>
+        <pre>
+            Function ask(question, yes, no) {
+                If(confirm(question)) yes();
+                else no();
+            }
+            ask(
+                “Do you agree?,
+                () => alert(“You agreed”),
+                () => alert(“You canceled the exection
+                ) 
+        </pre>
+    </h4>
+</body>
+
+</html>

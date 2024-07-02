@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.questions{
+    padding: 2rem;
+}
+
+/* LOOPSELECT CSS*/
+.loopselect h1 {
+    text-align: center;
+}
+
+.loopselect button {
+    display: block;
+    margin: 20px auto;
+}
+
+
+
+/* PASSWORD HIDE/SHOW CSS */
+.password-wrapper {
+    width: 50%;
+    margin-left: 25%;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+
+.password-wrapper input {
+    padding: 0.5rem;
+    width: 92%;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle img {
+    height: 1rem;
+    width: 1rem;
+}
+
+
+
+/* HEADER CSS */
+header {
+    height: 80px;
+    width: 100% !important;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 100px;   */
+}
+
+.logo {
+    font-size: 35px;
+    margin-left: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li {
+    list-style: none;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+    background-color: green;
+    color: white;
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+@media only screen and (max-width:100px) {
+    header {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #111;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 300px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        /* width: fit-content ; */
+        width: -moz-fit-content;
+        text-align: center;
+        margin: 0px auto 0 auto;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/* FORM CSS */
+.loginform {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+form {
+    padding: 2% 5%;
+    background-color: lightgreen;
+    text-align: center;
+    border-radius: 5%;
+}
+
+input {
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: brown;
+    color: white;
+    padding: 2% 10% !important;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+
+
+
+/* MODAL BOX CSS */
+.screen {
+    text-align: center;
+}
+
+#myBtn {
+    padding: 1% 5%;
+    border: none;
+    background-color: aqua;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* PREVENT FORM CSS */
+.preventform {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preventform form {
+    width: 30%;
+    margin-left: 25%;
+    margin: 20px;
+}
+
+.preventform label {
+    margin-top: 15% !important;
+}
+
+.preventform input {
+    margin-top: 1%;
+    width: 90%;
+    padding: 0.5rem;
+}
+
+.error {
+    color: red;
+}
+
+.submitbtn {
+    margin-top: 5% !important;
+}
+
+
+
+
+/* JQUERY SLIDER CSS*/
+.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+#carbonads {
+    display: block;
+    overflow: hidden;
+    max-width: 728px;
+    position: relative;
+    font-size: 22px;
+    box-sizing: content-box
+}
+
+#carbonads>span {
+    display: block
+}
+
+#carbonads a {
+    color: #4F46E5;
+    text-decoration: none
+}
+
+#carbonads a:hover {
+    color: #4F46E5
+}
+
+.carbon-wrap {
+    display: flex;
+    align-items: center
+}
+
+.carbon-img {
+    display: block;
+    margin: 0;
+    line-height: 1
+}
+
+.carbon-img img {
+    display: block;
+    height: 90px;
+    width: auto
+}
+
+.carbon-text {
+    display: block;
+    padding: 0 1em;
+    line-height: 1.35;
+    text-align: left
+}
+
+.carbon-poweredby {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 6px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 600;
+    font-size: 8px;
+    border-top-left-radius: 4px;
+    line-height: 1;
+    color: #aaa !important
+}
