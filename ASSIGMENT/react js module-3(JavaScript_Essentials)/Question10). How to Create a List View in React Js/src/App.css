@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://w.forfun.com/fetch/0b/0bc739968eeb709d8eebbdb132141cb8.jpeg") no-repeat !important;
+  background-size: 100% 100% !important;
+  background-attachment: fixed !important;
+}
+
+.addtask {
+  -webkit-backdrop-filter: blur(50px);
+  background-color: rgba(128, 128, 128, 0.568);
+}
+
+/* TABLE STAYLE */
+table{
+  -webkit-backdrop-filter: blur(50px);
+  background-color: rgba(128, 128, 128, 0.568);
+  text-align: center;
+}
+thead{
+  background-color: rgba(229, 255, 0, 0.616);
+}
+th,td{
+  padding:1rem 2rem;
+}
