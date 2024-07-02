@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock with Date</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="digital clock with date.css">
+
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Orbitron:wght@800&family=Oswald:wght@400;600&family=Sofia+Sans:ital,wght@1,300;1,400&family=Teko:wght@500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- js link -->
+    <script src="digital clock with date.js"></script>
+</head>
+<body onload="initClock()">
+
+    <!-- container starter -->
+    <div class="container">
+
+        <!-- for date -->
+        <div class="date">
+            <div class="date1">
+                <span id="dayname">Day,</span>
+                <span id="month">Month</span>
+                <span id="daynum">00,</span>
+                <span id="year">Year</span>
+            </div>
+
+        </div>
+
+        <!-- for time -->
+        <div class="watch">
+            <div class="time">
+                <div class="td">
+                    <span id="hour">00 :</span>
+                    <span id="minutes">00 :</span>
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

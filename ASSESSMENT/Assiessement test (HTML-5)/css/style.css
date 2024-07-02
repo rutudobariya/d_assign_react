@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    width: 80%;
+    margin: 6% auto;
+    background-color: darkturquoise;
+    padding: 2% 4%;
+}
+hr{
+    margin: 2% auto;
+}
+.addressmain{
+    background-color: white;
+    padding: 2% 3%;
+    font-style: normal;
+}
+.address-inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5%;
+}  
+.summary{
+    display: flex;
+    color: red !important;
+} 
+.summary i{
+    margin-right: 5%;
+}
+.summary:last-child{
+    color: blue !important;
+}
+.third{
+    text-align: center;
+    color: red;
+}
+.third i{
+    font-size: 30px;
+}
+
+/* formbody style */
+.formbody{
+    height: auto !important;
+    display: flex;
+    background-color: white;
+    margin-top: 2%;
+    padding: 2%;
+}
+.formdetails{
+    width: 60%;
+}
+input{
+    width: 40%;
+    margin: 2.5%;
+    padding: 1%;
+}
+textarea{
+    width: 86%;
+    margin: 2.5%;
+    padding: 1%;
+}
+button{
+    margin: auto 2.5%;
+    padding: 1% 4%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.map{
+    padding: 1%;
+    height: auto;
+}
+.map i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.facebook{
+    color: blue;
+}
+.twitter{
+    color: skyblue;
+}
+.linkedin{
+    color: darkcyan;
+}
+
+@media only screen and (min-width:769px) and (max-width:1200px) {   
+    .address-inner{
+        grid-column-gap: 4%;
+    }
+    .map iframe{
+        height: 89%;
+    }
+}
+
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .formbody{  
+        flex-direction: column !important;
+        padding: 3% !important;
+    }
+    .formdetails{
+        width: 100%;
+        margin-left: 5%;
+        overflow-x: hidden;
+    }
+    .map{
+        width: 88%;
+        margin-left: 6.5%;
+        margin-top: 2%;
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .address-inner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .addressmain{
+        margin-top: 5%;
+    }
+    .addressmain h2{
+        margin-left: 5%;
+    }
+    .first,.second,.third{
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .third{
+        display: none ;
+    }
+    .formbody{  
+        flex-direction: column !important;
+        padding: 3% !important;
+        margin-top: 5%;
+    }
+    .formdetails{
+        width: 100%;
+        margin-left: 5%;
+        overflow-x: hidden;
+    }
+    .map{
+        width: 88%;
+        margin-left: 6.5%;
+        margin-top: 2%;
+    }
+}

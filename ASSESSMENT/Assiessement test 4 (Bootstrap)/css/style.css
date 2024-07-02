@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: gainsboro !important;
+}
+
+.inner-container {
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 5px rgba(0, 0, 0, 0.473);
+}
+
+.twitter-logo img {
+    border-radius: 50%;
+    box-shadow: 3px 3px 9px 4px rgba(0, 0, 0, 0.473);
+}
+
+.twitter-icon {
+    border: 2px solid darkgray;
+    font-size: 20px;
+    margin: 10% !important;
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 50%;
+    padding: 2% 3%;
+}
+
+.input-box {
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px darkgray inset;
+}
+
+.input-group i {
+    padding: 2% 5%;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+
+    /* box-shadow:2px 2px 5px 5px darkgray inset; */
+    padding: 2% 0 2% 5%;
+}
+
+input[type="submit"] {
+    border-radius: 20px;
+    background-color: #1DA1F2;
+    box-shadow: 0px 0px 0px 0px white inset !important;
+}

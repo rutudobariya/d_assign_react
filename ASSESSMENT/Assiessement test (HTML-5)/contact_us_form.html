@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact_us</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google font cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Tourney:wght@300&display=swap" rel="stylesheet">
+    <!-- font awsome icon cnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- form start -->
+    <form method="post" action="mail.php">
+        <h2>CONTACT US</h2>
+        <hr/>
+
+        <!-- address start -->
+        <address>
+            <div class="addressmain">
+                <h2>ADDRESS :</h2>
+                <div class="address-inner">
+                    <div class="first">
+                        1st Floor, Aditya Complex, Jalaram 2 Street Number 2, above Sbi Bank, nr. Indira Circle, Rajkot, Gujarat 360005
+                    </div>
+                    <div class="second">
+                        <div class="summary">
+                            <i class="fa fa-phone-square"></i>
+                            <h5>+91 9975467621</h5>
+                        </div>
+                        <div class="summary">
+                            <i class="fa fa-envelope"></i>
+                            <h5>expo23@gmail.com</h5>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                </div>
+            </div>
+        </address>
+        <!-- address end -->
+
+        <!-- form-body start -->
+        <div class="formbody">
+            <div class="formdetails">
+
+                <input type="text" name="name"  maxlength="8" placeholder="Name :" pattern="[a-zA-Z]+" title="Write your name atlist 3 alphabets" required />
+                
+                <input type="text" name="company" pattern="[a-zA-Z +' ']+" placeholder="Company :" title="Write your company name" required />
+                
+                <input type="email" name="email" title="write your email address" placeholder="Email :" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Za-z])(?=.*[a-z]).*$" title="Enter your email address" />
+                
+                <input type="" length="10" name="mobile" pattern="[0-9]{10}+" title="Write your mobile number" placeholder="Mobile :"  required />
+                
+                <textarea name=" message" cols="30" rows="10" placeholder="Message :"></textarea> <br>
+                <button type="submit" name="send">Send</button>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118147.80351149273!2d70.82129635!3d22.27348695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3b!2sRajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1680580776628!5m2!1sen!2sin" width="100%" height="95%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <i class="fa fa-facebook-square facebook"></i>
+                <i class="fa fa-twitter-square twitter"></i>
+                <i class="fa fa-linkedin-square linkedin"></i>
+                <i class="fa fa-github-square github"></i>
+            </div>
+        </div>
+        <!-- form-body end -->
+    </form>
+</body>
+</html>

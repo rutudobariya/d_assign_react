@@ -1,0 +1,18 @@
+body{
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#form{
+  background-color: lightgray;
+}
+table tbody tr{
+  margin-top: 1rem !important;
+}
+table tr td:nth-child(1){
+  width: 50%;
+}
+.form-error{
+  color: red;
+}
