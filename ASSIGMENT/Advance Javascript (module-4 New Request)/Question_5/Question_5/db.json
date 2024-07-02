@@ -1,0 +1,39 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "description": "HP Smart Tank All In One 580 Multi-function WiFi Color Inkjet Printer for Print, Scan & Copy with 1 additional black ink bottle to Print Upto 12000 Black & 6000 Color Pages and 1 Year Extended Warranty with PHA Coverage  (Grey White, Ink Bottle)",
+      "url":"https://rukminim2.flixcart.com/image/416/416/xif0q/printer/r/5/g/-original-imagnuwerspazeeh.jpeg?q=70",
+      "productname":"Inkjet Printer "
+    },
+    {
+      "id": 2,
+      "description": "HP LaserJet Pro MFP M126a Printer Multi-function Monochrome Laser Printer  (Black, Toner Cartridge)",
+      "url":"https://rukminim2.flixcart.com/image/416/416/xif0q/printer/9/b/n/-original-imagnuwebynkb2rc.jpeg?q=70",
+      "productname":"HP LaserJet Pro MFP M126a Printer "
+    },
+    {
+      "id": 3,
+      "description": "Lenovo 23.8 inch Full HD VA Panel 3-Side Near Edgeless with TUV Eye Care Monitor (D24-20)  (Response Time: 4 ms, 75 Hz Refresh Rate)",
+      "url":"https://rukminim2.flixcart.com/image/416/416/ko8xtow0/monitor/t/a/y/d24-20-66aekac1in-lenovo-original-imag2qwzazcdmqtb.jpeg?q=70",
+      "productname":"Lenovo 23.8 inch Full HD TV "
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
