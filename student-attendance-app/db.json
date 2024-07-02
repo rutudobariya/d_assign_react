@@ -1,0 +1,53 @@
+{
+  "StudentData": [
+    {
+      "studentname": "divyesh patel",
+      "standard": "10",
+      "enno": "ten1002",
+      "attend": "Present",
+      "id": 4
+    },
+    {
+      "studentname": "shyam hirani",
+      "standard": "12",
+      "enno": "twl1201",
+      "attend": "Present",
+      "id": 5
+    },
+    {
+      "studentname": "prit ladani",
+      "standard": "10",
+      "enno": "ten1003",
+      "attend": "Present",
+      "id": 6
+    },
+    {
+      "studentname": "axit vamja",
+      "standard": "12",
+      "attend": "Absent",
+      "enno": "twl1202",
+      "id": 7
+    },
+    {
+      "studentname": "janak patel",
+      "standard": "11",
+      "attend": "Present",
+      "enno": "ele1101",
+      "id": 8
+    },
+    {
+      "studentname": "sonal Ghodasara",
+      "standard": "12",
+      "attend": "Present",
+      "enno": "twl1203",
+      "id": 9
+    },
+    {
+      "studentname": "dashu patel",
+      "standard": "5",
+      "attend": "Present",
+      "enno": "fiv5001",
+      "id": 10
+    }
+  ]
+}

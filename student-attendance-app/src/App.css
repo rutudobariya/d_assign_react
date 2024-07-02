@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+/* CUSTOMER SIDE */
+#attendance{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.745),rgba(0, 0, 0, 0.745)) ,url("https://wallpaperaccess.com/full/1644067.jpg") no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  place-items: center;
+}
+.attendanceform{
+  -webkit-backdrop-filter: blur(50px);
+  background-color: rgba(211, 211, 211, 0.253);
+}
+.fa-pencil, .fa-trash {
+  cursor: pointer;
+}
+@media only screen and (min-width:320px) and (max-width:768px) {
+  #attendance{
+    background: linear-gradient(rgba(0, 0, 0, 0.745),rgba(0, 0, 0, 0.745)) ,url("https://images.pexels.com/photos/4861373/pexels-photo-4861373.jpeg?cs=srgb&dl=pexels-cottonbro-studio-4861373.jpg&fm=jpg") no-repeat;
+  background-size: 100% 100%;
+  }
+}
+.showbtn{
+  position: absolute;
+  bottom:1rem;
+  right:1rem;
+}
+
+/* ADMIN SIDE */
+#attendancetable {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+form label{
+  color: white;
+}
+
+table,th,td{
+  padding: 0.5rem 1.5rem;
+  border: 2px solid white !important;
+  background-color: black;
+  color: white;
+}
+th{
+  background-color:orange;
+}
+@media only screen and (min-width:320px) and (max-width:768px) {
+  table,th,td{
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+  }  
+}
+
+/* UPDATE ATTENDANCE */
+#updateattendance{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.745),rgba(0, 0, 0, 0.745)) ,url("https://img.freepik.com/free-photo/cute-schoolboy_1098-13621.jpg?w=2000") no-repeat;
+  background-size: 100% 100%;
+  display: grid;
+  place-items: center;
+}
