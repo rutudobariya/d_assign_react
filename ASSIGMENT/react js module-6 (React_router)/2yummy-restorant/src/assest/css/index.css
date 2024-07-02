@@ -1,0 +1,887 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-X: hidden !important;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* navbar style */------------------------------------------------------------------------------------------------------------------------------
+#navigation {
+  position: sticky !important;
+  top: 0 !important;
+  backdrop-filter: (20px);
+}
+
+.brand-logo a {
+  text-decoration: none !important;
+  color: rgb(50, 50, 50);
+}
+
+.brand-logo a h1 sub {
+  color: #dc3545;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: 0.1s ease;
+}
+
+.navbar-nav a:hover {
+  color: #dc3545;
+}
+
+.navbar-nav li a:active {
+  color: #dc3545;
+}
+@media only screen and (min-width:320px) and (max-width:992px){
+  #navigation {
+    position: sticky !important;
+    top: 0 !important;
+    backdrop-filter:blur(20px);
+    z-index: 1000;
+  }
+  .navbar-nav li a{
+    text-align: center !important;
+  }
+  .nav-item:nth-last-child(1){
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* HOME PAGE STYLE START */---------------------------------------------------------------------------------------------------------------------
+/* header style */
+#header .detail {
+  padding: 6% 9.8% !important;
+}
+
+#header .detail h1 {
+  font-size: 3.4rem;
+}
+
+#header .btn {
+  padding: 3% 10%;
+}
+
+#header .btn:hover {
+  background-color: rgba(0, 0, 0, 0.745) !important;
+}
+
+#header .detail button:hover {
+  background-color: rgb(54, 54, 54) !important;
+}
+
+.imagee img {
+  width: 70%;
+  height: auto;
+}
+
+.imagee {
+  background: url('../images//home-page/header//giphy.gif') no-repeat;
+  background-size: 100% 100%;
+}
+
+.food-item {
+  height: 230px !important;
+  overflow: hidden !important;
+}
+
+.food-item img {
+  height: 100%;
+  width: 100%;
+  transition: 0.8s;
+}
+
+.food-item img:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0px 0px 5px 5px black; */
+}
+
+@media only screen and (min-width:320px) and (max-width:576px) {
+  .food-items div {
+    height: 250px;
+    margin-top: 4%;
+  }
+}
+
+/* brackfast section style */
+#breakfast {
+  height: auto;
+  background-color: #d6d6d6 !important;
+}
+
+.redcontainer {
+  height: 350px;
+  background-color: #dc3545 !important;
+}
+
+.hotdog {
+  transform: translateY(-18%);
+}
+
+.card {
+  margin: -30% 0 0 25%;
+}
+
+.card button {
+  padding: 3% 8%;
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .redcontainer {
+    height: 200px;
+  }
+
+  .hotdog {
+    transform: translateY(-100px);
+  }
+
+  .card {
+    margin: -30% 0 0 18%;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+  .redcontainer {
+    height: 180px;
+  }
+
+  .hotdog {
+    transform: translateY(-110px);
+  }
+
+  .card {
+    margin: -40% 0 0 28%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:576px) {
+  .redcontainer {
+    height: 130px;
+  }
+
+  .card {
+    margin: 0%;
+  }
+}
+
+
+/* menu section style */
+#menu {
+  background: url('../images/home-page/menu/veraiti.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.empty {
+  height: 300px;
+}
+
+.menu-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2%;
+  grid-row-gap: 5%;
+}
+
+.menu-inner {
+  background-color: rgba(0, 0, 0, 0.344);
+}
+
+.menu-count h1 {
+  font-size: 3rem !important;
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+  .empty {
+    display: none;
+  }
+
+  .menu-main {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-row-gap: 1%;
+  }
+
+  .menu-inner img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:576px) {
+  .empty {
+    display: none;
+  }
+
+  .menu-main {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-row-gap: 0%;
+    ;
+  }
+
+  .menu-inner {
+    margin-bottom: 5%;
+  }
+
+}
+
+/* devilery-service style*/
+#devilery-service {
+  background-color: #d6d6d6 !important;
+  padding-bottom: 10%;
+}
+
+.service-circle {
+  height: 110px;
+}
+
+.service-bg {
+  height: 40rem;
+  width: 90%;
+  margin-left: 10%;
+  margin-top: 10%;
+  z-index: -100 !important;
+}
+
+.service-bg img {
+  margin-top: -10%;
+  margin-left: 5%;
+}
+
+.service-card {
+  margin: -10% 0 0 49%;
+  z-index: 100 !important;
+}
+
+.service-card p {
+  text-align: justify;
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  #devilery-service {
+    padding-bottom: 10%;
+  }
+
+  .service-circle {
+    height: 140px;
+  }
+
+  .service-card {
+    margin: -10% 0 0 40%;
+    z-index: 1000 !important;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+  #devilery-service {
+    padding-bottom: 10%;
+  }
+
+  .service-circle {
+    height: 140px;
+  }
+
+  .service-card {
+    margin: -10% 0 0 30%;
+    z-index: 1000 !important;
+  }
+}
+
+@media only screen and (min-width:480px) and (max-width:576px) {
+  .service-circle {
+    width: 100px !important;
+    height: 80px;
+  }
+
+  .service-card {
+    margin: 10% 0 0 10%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  #devilery-service {
+    padding-bottom: 25%;
+  }
+
+  .service-circle {
+    width: 100px !important;
+    height: 80px;
+  }
+
+  .service-bg img {
+    margin-top: -10%;
+    margin-left: 0%;
+  }
+
+  .service-card {
+    margin: 10% 0 0 10%;
+    z-index: 1000 !important;
+  }
+}
+
+
+/* fastfood section style */
+#fastfood {
+  background: url("../images/home-page/fastfood//pizza.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(110%);
+}
+
+.american {
+  margin: 8rem auto;
+}
+
+#fastfood h3 {
+  letter-spacing: 4px;
+}
+
+#fastfood h1 {
+  font-size: 7rem !important;
+}
+
+#fastfood .button {
+  padding: 0.7rem 3rem !important;
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+  #fastfood h3 {
+    letter-spacing: 4px;
+  }
+
+  #fastfood h1 {
+    font-size: 5rem !important;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+  .american {
+    margin: 5rem auto;
+  }
+
+  #fastfood h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  #fastfood h1 {
+    font-size: 4rem !important;
+  }
+}
+
+@media only screen and (min-width:480px) and (max-width:576px) {
+  .american {
+    margin: 4rem auto;
+  }
+
+  #fastfood h3 {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  #fastfood h1 {
+    font-size: 3.5rem !important;
+  }
+
+  #fastfood .button {
+    font-size: 15px;
+    padding: 0.1rem 1rem !important;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .american {
+    margin: 4rem auto;
+  }
+
+  #fastfood h3 {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  #fastfood h1 {
+    font-size: 2rem !important;
+  }
+
+  #fastfood .button {
+    font-size: 15px;
+    padding: 0.1rem 1rem !important;
+  }
+
+  #fastfood .button:hover {
+    background-color: rgb(54, 54, 54) !important;
+    border-color: rgb(54, 54, 54);
+  }
+}
+
+/* burger-menu section style */
+.burger1 {
+  background: url("../images/home-page/burger-menu//double-burger.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(120%);
+}
+
+.burger2 {
+  background: url("../images/home-page/burger-menu/farm-house.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(120%);
+}
+
+.burger3 {
+  background: url("../images/home-page/burger-menu/bacon-burger.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(120%);
+}
+
+.burger4 {
+  background: url("../images/home-page/burger-menu/special-offer.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(120%);
+}
+
+.burger5 {
+  background: url("../images/home-page/burger-menu/black-burger.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(120%);
+}
+
+.burger6 {
+  background: url("../images/home-page/burger-menu/king-burger.jpg") no-repeat;
+  background-size: 100% 100%;
+  -webkit-filter: contrast(120%);
+}
+
+.burger-info {
+  padding: 4rem 0;
+  width: 50%;
+  background-color: rgba(127, 127, 127, 0.45);
+  transition: 1s ease !important;
+}
+
+.burger-box:hover .burger-info {
+  width: 100%;
+}
+
+.burger-info button:hover {
+  background-color: rgb(54, 54, 54) !important;
+  border-color: rgb(54, 54, 54);
+}
+
+/* slider section style */
+#slider {
+  background: url("../images//home-page//slider/6197-min.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.carousel-slide {
+  color: black !important;
+}
+
+#slider .carousel {
+  padding: 3rem 0 !important;
+}
+
+#slider .carousel img,
+#slider .carousel h3 {
+  margin: 1rem 0 !important;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: black !important;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  #slider .carousel {
+    padding: 0rem 0 !important;
+  }
+
+  #slider .carousel img,
+  #slider .carousel h3 {
+    margin: 0rem 0 !important;
+  }
+}
+
+/* footer style */
+#footer {
+  background: linear-gradient(to right, #E81922, #1a1a1a 60%) !important;
+  margin: 0;
+  padding: 0;
+}
+
+#footer h3 {
+  letter-spacing: 4px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer a {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#footer a:hover {
+  cursor: pointer;
+  color: blue !important;
+}
+
+.social-mediya b {
+  padding: 1% 2%;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-left: 2%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.social-mediya b:nth-child(1) {
+  margin-left: 0%;
+
+}
+
+.social-mediya b:hover {
+  background-color: blue;
+  border-color: blue;
+}
+
+.copyright {
+  background-color: #1a1a1a;
+}
+
+
+
+/* ABOUT US PAGE STYLE START -----------------------------------------------------------------------------------------------------------------*/
+/* aboutus section style */
+#pagename {
+  background-image: linear-gradient(rgba(35, 35, 35, 0.765), rgba(60, 60, 60, 0.735)), url("../images//Myfood.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+}
+
+#pagename h1 {
+  font-size: 5rem;
+  margin: 6rem auto;
+}
+@media only screen and (min-width:320px) and (max-width:576px) {
+  #pagename h1 {
+    font-weight: bolder !important;
+    font-size: 3rem;
+    margin: 3rem auto;
+  } 
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+  #pagename h1 {
+    font-size: 4.5rem;
+    margin: 4.5rem auto;
+  } 
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3%;
+  grid-row-gap: 5%;
+}
+
+.about-container .photos {
+  position: relative;
+}
+
+.about-container .photos:nth-child(2) img {
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s ease;
+}
+
+.about-container .photos:nth-child(3) img {
+  position: absolute;
+  right: 0;
+  transition: 0.3s ease;
+}
+
+.about-container .photos:nth-child(2) img:hover,
+.about-container .photos:nth-child(3) img:hover {
+  width: 100% !important;
+}
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  .about-container{
+    margin-top: 10% !important;
+  }
+  .about-container .photos:nth-child(1){
+    position: relative !important;
+  }
+  .about-container .photos:nth-child(1) img {
+    position: absolute !important;
+    bottom: 0 !important;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .about-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .about-container .photos{
+    height: 100px;
+  }
+  .about-container .photos:nth-child(2),
+  .about-container .photos:nth-child(3) {
+    display: none; 
+  }
+  .about-container .photos img{
+    height: 200%;
+  }
+}
+#oneline{
+  font-family: 'Lobster', cursive ;
+}
+#oneline::after{
+  position: absolute;
+  content: " ";
+  width: 50px;
+  height: 2px;
+  top: 60%;
+  margin-left: 5px;
+  margin-top: -1px;
+  background: #dc3545;
+}
+
+/* out team section */
+#twoline{
+  font-family: 'Lobster', cursive ;
+}
+#twoline::before{
+  position: absolute;
+  content: " ";
+  width: 50px !important;
+  height: 2px  !important;
+  top: 50% !important;
+  margin-left: -55px !important;
+  margin-top: -1px !important;
+  background-color: #dc3545;
+}
+#twoline::after{
+  position: absolute;
+  content: " ";
+  width: 50px !important;
+  height: 2px  !important;
+  top: 50% !important;
+  margin-left: 5px !important;
+  margin-top: -1px !important;
+  background: #dc3545 !important;
+}
+#ourteam .cardrow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2%;
+}
+
+#ourteam .imgbox {
+  overflow: hidden !important;
+}
+
+#ourteam .imgbox img {
+  transition: 0.5s ease;
+}
+
+#ourteam .cardicon {
+  padding: 4% 7%;
+  border-radius: 50% 50% 0 0;
+  background-color: #dc3545;
+  cursor: pointer;
+}
+
+#ourteam .cardicon i {
+  color: white;
+}
+
+#ourteam .card .cardfottor {
+  visibility: hidden;
+}
+
+/* #ourteam .card:hover{
+  box-shadow: 0px 0px 4px 2px #dc3545;
+} */
+#ourteam .card:hover img {
+  transform: scale(1.2);
+}
+#ourteam .card:hover .cardfottor {
+  visibility: visible;
+}
+@media only screen and (min-width:576px) and (max-width:992px) {
+  #ourteam .cardrow {
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:2% ;
+    grid-row-gap:2% ;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:576px) {
+  #ourteam .cardrow {
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap:2% ;
+  }
+}
+/* service section */
+.servicecard i{
+  font-size: 30px;
+  transition: 0.5s ease all;
+}
+.servicecard{
+  transition: 0.5s ease all;
+}
+.servicecard:hover{
+  background-color: #dc3546b2;
+  border-color: transparent !important;
+  color: white !important;
+}
+.servicecard:hover i{
+  color: white !important;
+}
+
+@media screen and (min-width:320px) and (max-width:576px) {
+  #ourservice{
+    margin-top: 20%;
+  }
+}
+/* gallery section style */
+#gallery {
+  height: auto;
+}
+
+#gallery .gallery-img-container {
+  border: 2px solid #1a1a1a;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#gallery .gallery-img-container img {
+  transition: 0.5s ease;
+}
+
+#gallery .gallery-img-container:hover {
+  border-color: transparent;
+}
+
+#gallery .gallery-img-container:hover img {
+  transform: scale(1.15);
+}
+
+/* Modal Style */
+.modal{
+  margin-top: 5% !important;
+}
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  .modal{
+    margin-top: 20% !important;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+  .modal{
+    margin-top: 25% !important;
+  }
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+  .modal{
+    margin-top: 35% !important;
+  }
+}
+@media only screen and (min-width:320px) and (max-width:576px) {
+  .modal{
+    margin-top: 50% !important;
+  }
+}
+
+
+/*  CONTACT US PAGE STYLE START --------------------------------------------------------------------------------------------------------------*/
+/* contactus section style */
+#contactus {
+  height: auto;
+}
+@media only screen and (min-width:320px) and (max-width:576px) {
+  #contactus h1 {
+    font-size: 3rem;
+    margin: 3rem auto;
+  } 
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+  #contactus h1 {
+    font-size: 4rem;
+    margin: 4.5rem auto;
+  } 
+}
+
+.information {
+  transition: 0.5s ease;
+  /* margin-top: 5%; */
+}
+
+.information:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 3px #dc3545 !important;
+}
+
+.detailsform input,
+.detailsform textarea {
+  border-radius: 0;
+  padding: 1rem auto;
+  width: 100%;
+  border:2px solid #3a3a3a77;
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+  .information a {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .detailsform{
+    margin-top: 5%;
+  }
+}
+
+
+/* BOOKING TABLE STYLE START -----------------------------------------------------------------------------------------------------------------*/
+#booktable input, #booktable textarea{
+  border: none;
+  background-color:#d6d6d66b;
+}
+#booktable button{
+  padding: 1% 4%;
+}
+
+
+
+/* MENU PAGE STYLE START --------------------------------------------------------------------------------------------------------------------- */
+
+#ourmenu .menu-type:hover{
+  cursor: pointer !important;
+}
+
+#launch-menu ,
+#dinner-menu{
+    display: none;
+}
+.items{
+  cursor: pointer;
+  animation:zoomIn 1s alternate;
+}
+#breakfast-menu .items img,
+#launch-menu .items img,
+#dinner-menu .items img{
+  height: 200px;
+}
+#breakfastbtn{
+  border-bottom: 3px solid #dc3545;
+}
+
+@media only screen and (min-width:320px) and (max-width:500px) {
+  #breakfastbtn img,#launchbtn img,#dinnerbtn img{
+    display: none;
+  }
+  #breakfastbtn .special,#launchbtn .special,#dinnerbtn .special{
+    width: 100% !important;
+    text-align: center;
+  }
+}
